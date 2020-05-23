@@ -1,0 +1,78 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "label":"VS2015",
+    "tasks": [
+        {
+            "label": "build-debug",
+            "type": "shell",
+            "command": "C:\\Program Files (x86)\\Microsoft Visual Studio 14.0\\Common7\\IDE\\devenv.com",
+            "args": [
+                "/build",
+                "debug",
+                "${workspaceFolder}\\TestProject\\TestProject.sln"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            // Use the standard MS compiler pattern to detect errors, warnings and infos
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "build-release",
+            "type": "shell",
+            "command": "C:\\Program Files (x86)\\Microsoft Visual Studio 14.0\\Common7\\IDE\\devenv.com",
+            "args": [
+                "/build",
+                "release",
+                "${workspaceFolder}\\TestProject\\TestProject.sln"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            // Use the standard MS compiler pattern to detect errors, warnings and infos
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "rebuild-debug",
+            "type": "shell",
+            "command": "C:\\Program Files (x86)\\Microsoft Visual Studio 14.0\\Common7\\IDE\\devenv.com",
+            "args": [
+                "/rebuild",
+                "debug",
+                "${workspaceFolder}\\TestProject\\TestProject.sln"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            // Use the standard MS compiler pattern to detect errors, warnings and infos
+            "problemMatcher": "$msCompile",
+            "presentation" : {
+                "clear": true                
+            }
+        },
+        {
+            "label": "rebuild-release",
+            "type": "shell",
+            "command": "C:\\Program Files (x86)\\Microsoft Visual Studio 14.0\\Common7\\IDE\\devenv.com",
+            "args": [
+                "/rebuild",
+                "release",
+                "${workspaceFolder}\\TestProject\\TestProject.sln"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            // Use the standard MS compiler pattern to detect errors, warnings and infos
+            "problemMatcher": "$msCompile",
+            "presentation" : {
+                "clear": true                
+            }
+        }
+    ]
+}
