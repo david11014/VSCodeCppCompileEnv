@@ -18,7 +18,18 @@
                 "isDefault": true
             },
             // Use the standard MS compiler pattern to detect errors, warnings and infos
-            "problemMatcher": "$msCompile"
+            "problemMatcher": {
+                "base":"$msCompile",
+                "fileLocation": ["relative", "${workspaceFolder}\\TestProject\\TestProject"],
+                "pattern": {
+                    "regexp": "^\\d+>([^\\s].*)\\((\\d+|\\d+,\\d+|\\d+,\\d+,\\d+,\\d+)\\)\\s*:\\s+(error|warning|info)\\s+(\\w{1,2}\\d+)\\s*:\\s*(.*)$",
+                    "file": 1,
+                    "line": 2,
+                    "severity": 3,
+                    "code": 4,
+                    "message": 5
+                }
+            }
         },
         {
             "label": "build-release",
@@ -34,7 +45,18 @@
                 "isDefault": true
             },
             // Use the standard MS compiler pattern to detect errors, warnings and infos
-            "problemMatcher": "$msCompile"
+            "problemMatcher": {
+                "base":"$msCompile",
+                "fileLocation": ["relative", "${workspaceFolder}\\TestProject\\TestProject"],
+                "pattern": {
+                    "regexp": "^\\d+>([^\\s].*)\\((\\d+|\\d+,\\d+|\\d+,\\d+,\\d+,\\d+)\\)\\s*:\\s+(error|warning|info)\\s+(\\w{1,2}\\d+)\\s*:\\s*(.*)$",
+                    "file": 1,
+                    "line": 2,
+                    "severity": 3,
+                    "code": 4,
+                    "message": 5
+                }
+            }
         },
         {
             "label": "rebuild-debug",
@@ -50,7 +72,18 @@
                 "isDefault": true
             },
             // Use the standard MS compiler pattern to detect errors, warnings and infos
-            "problemMatcher": "$msCompile",
+            "problemMatcher": {
+                "base":"$msCompile",
+                "fileLocation": ["relative", "${workspaceFolder}\\TestProject\\TestProject"],
+                "pattern": {
+                    "regexp": "^\\d+>([^\\s].*)\\((\\d+|\\d+,\\d+|\\d+,\\d+,\\d+,\\d+)\\)\\s*:\\s+(error|warning|info)\\s+(\\w{1,2}\\d+)\\s*:\\s*(.*)$",
+                    "file": 1,
+                    "line": 2,
+                    "severity": 3,
+                    "code": 4,
+                    "message": 5
+                }
+            },
             "presentation" : {
                 "clear": true                
             }
@@ -69,7 +102,18 @@
                 "isDefault": true
             },
             // Use the standard MS compiler pattern to detect errors, warnings and infos
-            "problemMatcher": "$msCompile",
+            "problemMatcher": {
+                "base":"$msCompile",
+                "fileLocation": ["relative", "${workspaceFolder}\\TestProject\\TestProject"],
+                "pattern": {
+                    "regexp": "^\\d+>([^\\s].*)\\((\\d+|\\d+,\\d+|\\d+,\\d+,\\d+,\\d+)\\)\\s*:\\s+(error|warning|info)\\s+(\\w{1,2}\\d+)\\s*:\\s*(.*)$",
+                    "file": 1,
+                    "line": 2,
+                    "severity": 3,
+                    "code": 4,
+                    "message": 5
+                }
+            },
             "presentation" : {
                 "clear": true                
             }
