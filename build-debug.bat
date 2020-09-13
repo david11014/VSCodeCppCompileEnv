@@ -1,0 +1,1 @@
+"C:\\Program Files (x86)\\Microsoft Visual Studio 14.0\\Common7\\IDE\\devenv.com" /build debug .\TestProject\TestProject.sln | MSVC_Err_Decoder.exe

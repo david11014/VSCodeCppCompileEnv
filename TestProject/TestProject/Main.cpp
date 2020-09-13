@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include "TestLib.h"
 
 int main() {
 
@@ -15,6 +16,8 @@ int main() {
 		/*int *i = (int*)0x1234567879;
 		*i = 10;*/
 	}
+
+	Test();
 
 	return 0;
 }
