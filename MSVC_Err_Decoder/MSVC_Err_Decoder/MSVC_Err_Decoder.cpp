@@ -7,19 +7,17 @@ int main() {
 
 	std::map<int, std::string> project_map;
 	std::string input;
-
+	
 	// match "(PROJECT_INDEX)>------Build started : Project: (PROJECT_NAME), Configuration : Release x64------";
-	std::regex reg_StartBuild("(\\d)+>\\-\\-\\-\\-\\-\\-.+Project: (.+),");
+	std::regex reg_StartBuild("(\\d+)>\\-\\-\\-\\-\\-\\-.+Project: (.+),");
 	// match "(PROJECT_INDEX)>(OpenGL.cpp(720)INFO)";	
-	std::regex reg_ERROR("(\\d)+>(.+\\..+\\(\\d+\\).+)");
+	std::regex reg_ERROR("(\\d+)>(.+\\..+\\(\\d+\\).+)");
 	// match absulate path error message
-	std::regex reg_ERROR_ABS("(\\d)+>([A-Za-z]:\\\\.+:.*)");
+	std::regex reg_ERROR_ABS("(\\d+)>([A-Za-z]:\\\\.+:.*)");
 	// match link error
 	// (PROJECT_INDEX)>LINK : fatal error LNK1181 : cannot open input file 'cgal.lib'
-	std::regex reg_LINK("(\\d)+>LINK : (.+)");
+	std::regex reg_LINK("(\\d+)>LINK : (.+)");
 	std::smatch match;
-
-	input = "1>C:\\Program Files (x86)\\Microsoft Visual Studio 14.0\\VC\\include\\xutility(2372): warning C4996: 'std::copy::_";
 
 	while (std::getline(std::cin, input)){
 
